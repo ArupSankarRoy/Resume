@@ -5,7 +5,7 @@
 	$message = $_POST['message'];
 
 	// Database connection
-	$conn = new mysqli('localhost','root','',' resume_contact_form');
+	$conn = new mysqli('localhost','root','','resume_contact_form');
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
