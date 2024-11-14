@@ -271,6 +271,27 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+/* Animated Gradient Background */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Apply to Hero Section */
+#hero {
+  background: linear-gradient(90deg, #0563bb, #0678e3, #ff4e50, #f9d423);
+  background-size: 300% 300%;
+  animation: gradient-animation 8s ease infinite;
+}
+
 #hero {
   width: 100%;
   height: 100vh;
